@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    overflow: hidden;
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: rotate(45deg);
+    animation: heartFloat 15s linear infinite;
+    opacity: 0;
+}
+
+.heart:before, .heart:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.heart:before {
+    top: -10px;
+    left: 0;
+}
+
+.heart:after {
+    top: 0;
+    left: -10px;
+}
+
+@keyframes heartFloat {
+    0% {
+        transform: rotate(45deg) translateY(0) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(45deg) translateY(-100vh) translateX(100px);
+        opacity: 0;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    text-align: center;
+    z-index: 10;
+    border: 1px solid rgba(255, 192, 203, 0.5);
+}
+
+h1 {
+    color: #ff6b81;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.heart-icon {
+    font-size: 36px;
+    color: #ff6b81;
+    margin: 10px 0;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.birthday {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5px 0;
+    animation: colorShift 3s infinite;
+}
+
+@keyframes colorShift {
+    0% {
+        background: linear-gradient(to right, #ff4b2b, #ff416c);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    50% {
+        background: linear-gradient(to right, #ff416c, #ff4b2b);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    100% {
+        background: linear-gradient(to right, #ff4b2b, #ff416c);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+.cake {
+    font-size: 30px;
+    margin: 10px 0;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

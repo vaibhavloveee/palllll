@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Add this to the head section of your index.html file -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <title>Birthday Cake </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="cake-container">
+      <div class="candle-container" id="candle-container">
+        <div class="candle" id="candle-1" style="transform: rotate(-5deg);">
+          <div class="flame" id="flame-1"></div>
+          <div class="blow-effect" id="blow-effect-1"></div>
+        </div>
+        <div class="candle" id="candle-2" style="transform: rotate(2deg);">
+          <div class="flame" id="flame-2"></div>
+          <div class="blow-effect" id="blow-effect-2"></div>
+        </div>
+        <div class="candle" id="candle-3" style="transform: rotate(-2deg);">
+          <div class="flame" id="flame-3"></div>
+          <div class="blow-effect" id="blow-effect-3"></div>
+        </div>
+        <div class="candle" id="candle-4" style="transform: rotate(3deg);">
+          <div class="flame" id="flame-4"></div>
+          <div class="blow-effect" id="blow-effect-4"></div>
+        </div>
+        <div class="candle" id="candle-5" style="transform: rotate(-3deg);">
+          <div class="flame" id="flame-5"></div>
+          <div class="blow-effect" id="blow-effect-5"></div>
+        </div>
+      </div>
+      
+      <div class="cake">
+        <div class="layer-top"></div>
+        <div class="icing">
+          <div class="cherry" style="left: 50px;"></div>
+          <div class="cherry" style="left: 120px;"></div>
+          <div class="cherry" style="left: 180px;"></div>
+        </div>
+        <div class="layer-middle"></div>
+        <div class="layer-bottom"></div>
+      </div>
+      
+      <div class="plate"></div>
+    </div>
+    
+    <button class="button" id="light-button">Light Candles</button>
+    <div class="instructions">Hover over each candle to blow it out! Listen for the sounds!</div>
+  </div>
+
+  <div class="sound-control" id="sound-control">
+    <svg class="sound-icon" id="sound-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+    </svg>
+  </div>
+
+  <div class="navigation-buttons">
+    <a href="../page2/index.html" class="nav-button back-button">← Back to Memories</a>
+    <a href="../page4/index.html" class="nav-button next-button">Next Surprise →</a>
+  </div>
+
+  <audio id="blow-sound" src="https://assets.mixkit.co/active_storage/sfx/212/212-preview.mp3" preload="auto"></audio>
+  <audio id="light-sound" src="https://assets.mixkit.co/active_storage/sfx/2588/2588-preview.mp3" preload="auto"></audio>
+  <audio id="celebration-sound" src="https://assets.mixkit.co/active_storage/sfx/1319/1319-preview.mp3" preload="auto"></audio>
+  <audio id="background-music" src="song/my-song.mp3" loop preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

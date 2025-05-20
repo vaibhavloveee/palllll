@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise For You ✨</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>From Me to You 💌❤️</h1>
+        </header>
+
+        <div class="letter-container">
+            <div class="letter" id="typed-text"></div>
+        </div>
+
+        <div class="video-container" id="video-message">
+            <!-- Replace with your video embed code -->
+            <iframe src="about:blank" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="navigation">
+            <a href="javascript:history.back()" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Birthday Cake
+            </a>
+            <a href="../page5/index.html" class="apology-button">
+                <i class="fas fa-heart"></i> Apology
+            </a>
+        </div>
+    </div>
+
+    <!-- Music Controls -->
+    <div class="music-controls" id="music-toggle">
+        <i class="fas fa-volume-mute" id="music-icon"></i>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="background-music" loop autoplay>
+        <source src="music/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.5.1/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
